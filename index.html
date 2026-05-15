@@ -45,8 +45,8 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%;overflow:hidden;background:#fff}
-body{display:flex;align-items:center;justify-content:center}
-.brand-block{display:flex;flex-direction:column;align-items:flex-start;max-width:90vw}
+body{display:flex;align-items:center;justify-content:center;padding:20px}
+.brand-block{display:flex;flex-direction:column;align-items:flex-start;max-width:90vw;width:100%}
 h1{
   font-family:'Roboto',sans-serif;
   font-weight:900;
@@ -54,6 +54,7 @@ h1{
   line-height:1;
   color:#000;
   white-space:nowrap;
+  overflow:visible;
 }
 .letter-group{display:inline}
 .line-i{
@@ -62,6 +63,8 @@ h1{
   height:0.72em;
   vertical-align:baseline;
   position:relative;
+  margin:0 0.05em;
+  flex-shrink:0;
 }
 .line-i::before{
   content:'';
@@ -85,7 +88,7 @@ h1{
 }
 .subtext {
   align-self:flex-end;
-  max-width:100%;
+  width:100%;
   text-align:right;
   font-family:'Courier New', Courier, monospace;
   font-size:clamp(10px, 1.1vw, 14px);
@@ -94,6 +97,8 @@ h1{
   margin-top:1.4rem;
   color:#000;
   padding-right:0;
+  word-wrap:break-word;
+  overflow-wrap:break-word;
 }
 .email-footer{
   position:fixed;
@@ -108,7 +113,7 @@ h1{
 <body>
 <div class="brand-block">
   <h1><span class="letter-group">GODMODD</span><span class="line-i"></span><span class="letter-group">NG</span></h1>
-  <p class="subtext">Unrestrained grip on gaming and AI with metahuman ability &nbsp;&nbsp;|&nbsp; Origin: 2010 Resurgence: 2026</p>
+  <p class="subtext">Unrestrained grip on gaming and AI with metahuman ability&nbsp;|&nbsp;Origin: 2010 Resurgence: 2026</p>
 </div>
 <span class="email-footer">atomicdotinc@gmail.com</span>
 </body>
